@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# For calling the API from Rails
+gem "httparty"
 # Bootstrap
 gem "twitter-bootstrap-rails"
 # Heroku
