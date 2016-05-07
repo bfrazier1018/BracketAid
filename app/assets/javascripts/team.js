@@ -1,11 +1,14 @@
 $(document).on("ready", function() {
-	$("#first-team").on("change", findTeam )
+	$("#first-team").on("change", teamStats )
 });
 
-function findTeam() {
+function teamStats() {
+
+var teamName = $("#first-team").val();
 
 	$.ajax({
-		url: `/api/team`,
+
+		url: `/api/team/${teamName}`,
 		success: function(data) {
 			console.log(data);
 		},

@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 	get "/", to: "site#home"
 	
 	scope "/api" do  
-		resources :team, only: [:index, :show]
+		get "/team", to: "team#index"
+		get "/team/:name", to: "team#show"
 	end
 
 end

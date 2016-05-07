@@ -1,6 +1,7 @@
+require "httparty"
+
 class TeamController < ApplicationController
 	
-	require "httparty"
 	protect_from_forgery with: :null_session
 
 	def index
@@ -15,6 +16,15 @@ class TeamController < ApplicationController
 		end		
 
 		render json: "success"
+	end
+
+	def show
+		team = Team.find_by(name: params[:name])
+		id = team.team_id
+
+		response = HTTParty.get("http://api.sportradar.us/ncaamb-t3/seasontd/2015/REG/teams/#{id}/statistics.json?api_key=t8533xedsh9yewxfka46mq5u")
+		
+		render json: response
 	end
 end
 
