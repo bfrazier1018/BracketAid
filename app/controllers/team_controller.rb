@@ -10,7 +10,7 @@ class TeamController < ApplicationController
 		
 		body.each do |bracket|
 			bracket["participants"].each do |team|
-				Team.create(team_id: team["id"], name: team["market"], seed: team["seed"])
+				Team.create(name: team["market"], team_id: team["id"], seed: team["seed"])
 			end
 		end		
 
