@@ -22,6 +22,12 @@ class TeamController < ApplicationController
 		render json: team
 	end
 
+	def info
+		team = Team.find_by(name: params[:name])
+
+		render json: team
+	end
+
 
 	def database
 		# Find and Save teams Id, Name, and Tourny Rank to Database

@@ -3,11 +3,41 @@ $(document).on("ready", function() {
 	$("#js-select-team2").on("change", findStatsTeam2);
 	$("#js-select-team1").on("change", findRankTeam1);
 	$("#js-select-team2").on("change", findRankTeam2);
+	$("#js-select-team1").on("change", findInfoTeam1);
+	$("#js-select-team2").on("change", findInfoTeam2);
 
 	// $("#js-select-team1").on("change", setDatabase) // FOR DATABASE USE ONLY
 });
 
 // ----------------- FIND TEAM INFO --------------------------
+function findInfoTeam1() {
+	var teamName  = $("#js-select-team1").val();
+
+	$.ajax({
+
+		url: `/api/info/${teamName}`,
+		success: function(data) {
+			// console.log(data);
+			displayInfoTeam1(data);
+		},
+		error: printError,
+	});
+};
+
+function findInfoTeam2() {
+	var teamName  = $("#js-select-team2").val();
+
+	$.ajax({
+
+		url: `/api/info/${teamName}`,
+		success: function(data) {
+			// console.log(data);
+			displayInfoTeam2(data);
+		},
+		error: printError,
+	});
+};
+
 function findStatsTeam1() {
 	var teamName = $("#js-select-team1").val();
 
@@ -15,7 +45,7 @@ function findStatsTeam1() {
 
 		url: `/api/team/${teamName}`,
 		success: function(data) {
-			console.log(data);
+			// console.log(data);
 			displayStatsTeam1(data)
 		},
 		error: printError,
@@ -63,8 +93,6 @@ function findRankTeam2() {
 		error: printError,
 	});
 };
-
-
 
 // ---------------------  ERROR FUNCTION ------------------------------
 function printError(error) {

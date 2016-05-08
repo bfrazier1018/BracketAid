@@ -1,4 +1,12 @@
 // ------------------ DISPLAY TEAM INFO ----------------------
+function displayInfoTeam1(info) {
+	$(".js-seed-team1").text(info.seed);
+};
+
+function displayInfoTeam2(info) {
+	$(".js-seed-team2").text(info.seed);
+};
+
 function displayStatsTeam1(info) {
 	var team = info.own_record.average;
 	var opponent = info.opponents.average;
@@ -14,6 +22,9 @@ function displayStatsTeam1(info) {
 	$(".js-offensive-rebounds-team1").text(team.off_rebounds);
 	$(".js-steals-team1").text(team.steals);
 	$(".js-turnovers-team1").text(team.turnovers);
+	$(".js-free-throws-team1").text((team.free_throws_made / team.free_throws_att).toFixed(2) * 100);
+	$(".js-field-goal-team1").text((team.field_goals_made / team.field_goals_att).toFixed(2) * 100)
+	$(".js-opponent-field-goal-team1").text((opponent.field_goals_made / opponent.field_goals_att).toFixed(2) * 100)
 };
 
 function displayStatsTeam2(info) {
@@ -31,6 +42,9 @@ function displayStatsTeam2(info) {
 	$(".js-offensive-rebounds-team2").text(team.off_rebounds);
 	$(".js-steals-team2").text(team.steals);
 	$(".js-turnovers-team2").text(team.turnovers);
+	$(".js-free-throws-team2").text((team.free_throws_made / team.free_throws_att).toFixed(2) * 100);
+	$(".js-field-goal-team2").text((team.field_goals_made / team.field_goals_att).toFixed(2) * 100)
+	$(".js-opponent-field-goal-team2").text((opponent.field_goals_made / opponent.field_goals_att).toFixed(2) * 100)
 };
 
 function displayRankTeam1(info) {

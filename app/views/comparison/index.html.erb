@@ -36,18 +36,20 @@
 		<div class="col-md-3 col-md-offset-3">
 			<p class="js-mascot1">Mascot 1</p>
 			<p>( <span class="js-wins-team1"></span> - <span class="js-losses-team1"></span> )</p>
+			<p>Seed: <span class="js-seed-team1"></span> </p>
 		</div> <!-- End Team 1 Info -->
 
 		<div class="col-md-3 col-md-offset-1">
 			<p class="js-mascot2">Mascot 2</p>
 			<p>( <span class="js-wins-team2"></span> - <span class="js-losses-team2"></span> )</p>
+			<p>Seed: <span class="js-seed-team2"></span> </p>
 		</div> <!-- End Team 2 Info -->
 	</div> <!-- End Basic Team Info Row -->
 
 	<div class="row team-stats-row">
 
 		<div class="col-md-7 col-md-offset-2">
-			<table class="table table-bordered table-condensed">
+			<table class="table table-bordered table-condensed table-striped">
 				<thead>
 					<tr>
 						<th>Season Stats (Average)</th>
@@ -80,6 +82,21 @@
 						<td>Opponents Points Per Game</td>
 						<td class="js-opponent-ppg-team1">0</td>
 						<td class="js-opponent-ppg-team2">0</td>
+					</tr>
+					<tr>
+						<td>Field Goal Percentage</td>
+						<td><span class="js-field-goal-team1"></span>%</td>
+						<td><span class="js-field-goal-team2"></span>%</td>
+					</tr>
+					<tr>
+						<td>Opponent Field Goal Percentage</td>
+						<td><span class="js-opponent-field-goal-team1"></span>%</td>
+						<td><span class="js-opponent-field-goal-team2"></span>%</td>
+					</tr>
+					<tr>
+						<td>Free Throw Percentage</td>
+						<td><span class="js-free-throws-team1"></span>%</td>
+						<td><span class="js-free-throws-team2"></span>%</td>
 					</tr>
 					<tr>
 						<td>Points in the Paint</td>
@@ -115,17 +132,7 @@
 						<td>Turnovers</td>
 						<td class="js-turnovers-team1">0</td>
 						<td class="js-turnovers-team2">0</td>
-					</tr>
-					<tr>
-						<td>Rebounds</td>
-						<td>0</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Rebounds</td>
-						<td>0</td>
-						<td>0</td>
-					</tr>
+					</tr>	
 				</tbody>
 			</table>
 		</div> <!-- End Stats Table -->
