@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "devise"
 # For calling the API from Rails
 gem "httparty"
 # Bootstrap

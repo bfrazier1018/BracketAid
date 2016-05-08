@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 	get "/", to: "site#home"
 	# Main Team Comparison Page
 	get "/comparison", to: "comparison#index"
+  	
+  	devise_for :users
 	
 	scope "/api" do  
 		# For Stats: Points, Rebouds, Percentages...
