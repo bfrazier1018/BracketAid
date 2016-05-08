@@ -11,11 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160507150733) do
+ActiveRecord::Schema.define(version: 20160508023248) do
+
+  create_table "ranks", force: :cascade do |t|
+    t.string   "name"
+    t.string   "team_id"
+    t.integer  "wins"
+    t.integer  "losses"
+    t.float    "sos"
+    t.float    "rpi"
+    t.integer  "rank"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "teams", force: :cascade do |t|
-    t.string   "team_id"
     t.string   "name"
+    t.string   "team_id"
     t.integer  "seed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
