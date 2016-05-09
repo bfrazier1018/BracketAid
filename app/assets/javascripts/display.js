@@ -25,6 +25,7 @@ function displayStatsTeam1(info) {
 	$(".js-free-throws-team1").text((team.free_throws_made / team.free_throws_att).toFixed(2) * 100);
 	$(".js-field-goal-team1").text((team.field_goals_made / team.field_goals_att).toFixed(2) * 100)
 	$(".js-opponent-field-goal-team1").text((opponent.field_goals_made / opponent.field_goals_att).toFixed(2) * 100)
+	$(".js-opponent-threes-team1").text(opponent.three_points_made);
 };
 
 function displayStatsTeam2(info) {
@@ -45,6 +46,7 @@ function displayStatsTeam2(info) {
 	$(".js-free-throws-team2").text((team.free_throws_made / team.free_throws_att).toFixed(2) * 100);
 	$(".js-field-goal-team2").text((team.field_goals_made / team.field_goals_att).toFixed(2) * 100)
 	$(".js-opponent-field-goal-team2").text((opponent.field_goals_made / opponent.field_goals_att).toFixed(2) * 100)
+	$(".js-opponent-threes-team2").text(opponent.three_points_made);
 };
 
 function displayRankTeam1(info) {

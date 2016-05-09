@@ -1,15 +1,46 @@
 <div class="container">
 
+	<div class="row home-image-row">
+	</div> <!-- End Home Image Row -->
+
+	<div class="row select-teams-row">
+		
+		<div class="col-md-2 col-md-offset-1">
+			<div class="form-group">
+				  <label for="js-select-team1">Select First Team:</label>
+				  <select class="form-control" id="js-select-team1">
+				    <option>North Carolina</option>
+				    <option>Kansas</option>
+				    <option>Duke</option>
+				    <option>Villanova</option>
+				  </select>
+			</div>
+		</div> <!-- End Team 1 Seclect Form -->
+
+		<div class="col-md-2 col-md-offset-5">
+			<div class="form-group">
+				  <label for="js-select-team2">Select Second Team:</label>
+				  <select class="form-control" id="js-select-team2">
+				    <option>Villanova</option>
+				    <option>Kansas</option>
+				    <option>Duke</option>
+				    <option>North Carolina</option>
+				  </select>
+			</div>
+		</div> <!-- End Team 2 Select Form -->
+
+	</div> <!-- End Select Teams Row -->
+
 	<div class="row basic-team-info-row">
 
-		<div class="col-md-3 col-md-offset-3">
-			<p class="js-mascot1">Tar Heels</p>
+		<div class="col-md-3 col-md-offset-2">
+			<p class="js-mascot1">Mascot 1</p>
 			<p>( <span class="js-wins-team1"></span> - <span class="js-losses-team1"></span> )</p>
 			<p>Seed: <span class="js-seed-team1"></span> </p>
 		</div> <!-- End Team 1 Info -->
 
-		<div class="col-md-3 col-md-offset-1">
-			<p class="js-mascot2">Wildcats</p>
+		<div class="col-md-3 col-md-offset-4">
+			<p class="js-mascot2">Mascot 2</p>
 			<p>( <span class="js-wins-team2"></span> - <span class="js-losses-team2"></span> )</p>
 			<p>Seed: <span class="js-seed-team2"></span> </p>
 		</div> <!-- End Team 2 Info -->
@@ -17,94 +48,159 @@
 
 	<div class="row team-stats-row">
 
-		<div class="col-md-7 col-md-offset-2">
-			<table class="table table-bordered table-condensed table-striped">
+		<div class="col-md-4 col-md-offset-0">
+			<table class="table table-bordered table-condensed table-striped js-table-team1">
 				<thead>
 					<tr>
 						<th>Season Stats (Average)</th>
 						<th class="js-table-name-team1">Team 1</th>
-						<th class="js-table-name-team2">Team 2</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>Current Rank</td>
 						<td class="js-rank-team1">0</td>
-						<td class="js-rank-team2">0</td>
 					</tr>
 					<tr>
 						<td>Strength of Schedule</td>
 						<td class="js-sos-team1">0</td>
-						<td class="js-sos-team2">0</td>
 					</tr>
 					<tr>
 						<td>Rating Percentage Index (RPI)</td>
 						<td class="js-rpi-team1">0</td>
-						<td class="js-rpi-team2">0</td>
 					</tr>
 					<tr>
 						<td>Points Per Game</td>
 						<td class="js-ppg-team1">0</td>
-						<td class="js-ppg-team2">0</td>
 					</tr>
 					<tr>
 						<td>Opponents Points Per Game</td>
 						<td class="js-opponent-ppg-team1">0</td>
-						<td class="js-opponent-ppg-team2">0</td>
 					</tr>
 					<tr>
 						<td>Field Goal Percentage</td>
 						<td><span class="js-field-goal-team1"></span>%</td>
-						<td><span class="js-field-goal-team2"></span>%</td>
 					</tr>
 					<tr>
 						<td>Opponent Field Goal Percentage</td>
 						<td><span class="js-opponent-field-goal-team1"></span>%</td>
-						<td><span class="js-opponent-field-goal-team2"></span>%</td>
 					</tr>
 					<tr>
 						<td>Free Throw Percentage</td>
 						<td><span class="js-free-throws-team1"></span>%</td>
-						<td><span class="js-free-throws-team2"></span>%</td>
 					</tr>
 					<tr>
 						<td>Points in the Paint</td>
 						<td class="js-paint-points-team1">0</td>
-						<td class="js-paint-points-team2">0</td>
 					</tr>
 					<tr>
 						<td>Opponent Points in the Paint</td>
 						<td class="js-opponent-paint-points-team1">0</td>
-						<td class="js-opponent-paint-points-team2">0</td>
 					</tr>
 					<tr>
 						<td>Three Pointers Made</td>
 						<td class="js-threes-team1">0</td>
-						<td class="js-threes-team2">0</td>
+					</tr>
+					<tr>
+						<td>Three Pointers Against</td>
+						<td class="js-opponent-threes-team1">0</td>
 					</tr>
 					<tr>
 						<td>Rebounds</td>
 						<td class="js-rebounds-team1">0</td>
-						<td class="js-rebounds-team2">0</td>
 					</tr>
 					<tr>
 						<td>Offensive Rebounds</td>
 						<td class="js-offensive-rebounds-team1">0</td>
-						<td class="js-offensive-rebounds-team2">0</td>
 					</tr>
 					<tr>
 						<td>Steals</td>
 						<td class="js-steals-team1">0</td>
-						<td class="js-steals-team2">0</td>
 					</tr>
 					<tr>
 						<td>Turnovers</td>
 						<td class="js-turnovers-team1">0</td>
-						<td class="js-turnovers-team2">0</td>
-					</tr>	
+					</tr>
 				</tbody>
 			</table>
-		</div> <!-- End Stats Table -->
+		</div> <!-- End Stats Table Team 1-->
+
+		<div class="col-md-4 col-md-offset-3">
+			<table class="table table-bordered table-condensed table-striped js-table-team2">
+				<thead>
+					<tr>
+						<th>Season Stats (Average)</th>
+						<th class="js-table-name-team2">Team 2</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Current Rank</td>
+						<td class="js-rank-team2">0</td>
+					</tr>
+					<tr>
+						<td>Strength of Schedule</td>
+						<td class="js-sos-team2">0</td>
+					</tr>
+					<tr>
+						<td>Rating Percentage Index (RPI)</td>
+						<td class="js-rpi-team2">0</td>
+					</tr>
+					<tr>
+						<td>Points Per Game</td>
+						<td class="js-ppg-team2">0</td>
+					</tr>
+					<tr>
+						<td>Opponents Points Per Game</td>
+						<td class="js-opponent-ppg-team2">0</td>
+					</tr>
+					<tr>
+						<td>Field Goal Percentage</td>
+						<td><span class="js-field-goal-team2"></span>%</td>
+					</tr>
+					<tr>
+						<td>Opponent Field Goal Percentage</td>
+						<td><span class="js-opponent-field-goal-team2"></span>%</td>
+					</tr>
+					<tr>
+						<td>Free Throw Percentage</td>
+						<td><span class="js-free-throws-team2"></span>%</td>
+					</tr>
+					<tr>
+						<td>Points in the Paint</td>
+						<td class="js-paint-points-team2">0</td>
+					</tr>
+					<tr>
+						<td>Opponent Points in the Paint</td>
+						<td class="js-opponent-paint-points-team2">0</td>
+					</tr>
+					<tr>
+						<td>Three Pointers Made</td>
+						<td class="js-threes-team2">0</td>
+					</tr>
+					<tr>
+						<td>Three Pointers Against</td>
+						<td class="js-opponent-threes-team2">0</td>
+					</tr>
+					<tr>
+						<td>Rebounds</td>
+						<td class="js-rebounds-team2">0</td>
+					</tr>
+					<tr>
+						<td>Offensive Rebounds</td>
+						<td class="js-offensive-rebounds-team2">0</td>
+					</tr>
+					<tr>
+						<td>Steals</td>
+						<td class="js-steals-team2">0</td>
+					</tr>
+					<tr>
+						<td>Turnovers</td>
+						<td class="js-turnovers-team2">0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div> <!-- End Stats Table Team 2 -->
 
 	</div> <!-- End Team Stats Row -->
 

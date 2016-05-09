@@ -14,10 +14,18 @@
  *= require_self
  */
 
-th {
+.js-table-name-team1 {
 	text-align: center;
 }
 
-td {
+.js-table-name-team2 {
+	text-align: center;
+}
+
+.js-table-team1 tbody tr td:last-child{
+	text-align: center;
+}
+
+.js-table-team2 tbody tr td:last-child{
 	text-align: center;
 }
