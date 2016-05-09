@@ -7,23 +7,51 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="/">Home</a></li>
-      <li><a href="/comparison">Compare Teams</a></li> 
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="/users/sign_in"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      <li><a href="/users/sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-    </ul>
-  </div>
-</nav>
 
-<%= yield %>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/comparison">Compare Teams</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      
+      <% if user_signed_in? %>
+           <li><a data-method="DELETE" href="users/sign_out"><button class="btn btn-primary btn-xs">Log Out</button></a></li> 
+      <% else %>
+          <li><a href="/users/sign_in"><button class="btn btn-primary btn-xs js-login">Login</button></a></li>
+          <li><a href="/users/sign_up"><button class="btn btn-primary btn-xs">Sign Up</button></a></li>
+      <% end %>
+      </ul>
+    </div>
+  </nav>
+
+    
+    <div id="login-modal" class="modal fade js-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <!-- Close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span>&times;</span>
+            </button>
+
+            <h2>Log In</h2>
+          </div>
+
+          <div class="modal-body">  
+            <%= render 'devise/sessions/new'   %>
+          </div>
+
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      </div><!-- End Login Modal -->
+  <%= yield %>
 
 </body>
 </html>

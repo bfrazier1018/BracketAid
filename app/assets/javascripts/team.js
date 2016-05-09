@@ -6,6 +6,11 @@ $(document).on("ready", function() {
 	$("#js-select-team1").on("change", findInfoTeam1);
 	$("#js-select-team2").on("change", findInfoTeam2);
 
+	$(".js-login").on("click", function() {
+		event.preventDefault();
+		$("#login-modal").modal("show");
+	});
+
 	// $("#js-select-team1").on("change", setDatabase) // FOR DATABASE USE ONLY
 });
 
