@@ -7,11 +7,8 @@ Rails.application.routes.draw do
 	
 	scope "/api" do  
 		# For Stats: Points, Rebouds, Percentages...
-		get "/team/:name", to: "team#stats"
-		# For Wins/Losses, SOS, RPI, Rank
-		get "/rank/:name", to: "team#rank"
-		# For Name, Seed, Id
-		get "/info/:name", to: "team#info"
+		get "/master/:name", to: "team#master_api"
+
 		# For creating database
 		get "/database", to: "team#database"
 	end

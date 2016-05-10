@@ -1,18 +1,33 @@
 // ------------------ DISPLAY TEAM INFO ----------------------
 function displayInfoTeam1(info) {
-	$(".js-seed-team1").text(info.seed);
+	var user = info.user;
+	var rank = info.rank;
+	$(".js-mascot1").text(info.stats.name);
+	$(".js-wins-team1").text(rank.wins);
+	$(".js-losses-team1").text(rank.losses);
+	$(".js-seed-team1").text(user.seed);
+	displayStatsTeam1(info);
 };
 
 function displayInfoTeam2(info) {
-	$(".js-seed-team2").text(info.seed);
+	var user = info.user;
+	var rank = info.rank;
+	$(".js-mascot2").text(info.stats.name);
+	$(".js-wins-team2").text(rank.wins);
+	$(".js-losses-team2").text(rank.losses);
+	$(".js-seed-team2").text(user.seed);
+	displayStatsTeam2(info);
 };
 
+// ----------------- DISPLAY TEAM STATS. TABLE ---------------------
 function displayStatsTeam1(info) {
-	var team = info.own_record.average;
-	var opponent = info.opponents.average;
+	var team = info.stats.own_record.average;
+	var opponent = info.stats.opponents.average;
 
-	$(".js-mascot1").text(info.name);
-	$(".js-table-name-team1").text(info.market);
+	$(".js-rank-team1").text(info.rank.rank);
+	$(".js-sos-team1").text(info.rank.sos);
+	$(".js-rpi-team1").text(info.rank.rpi);
+	$(".js-table-name-team1").text(info.user.name);
 	$(".js-ppg-team1").text(team.points);
 	$(".js-opponent-ppg-team1").text(opponent.points);
 	$(".js-paint-points-team1").text(team.paint_pts);
@@ -29,11 +44,13 @@ function displayStatsTeam1(info) {
 };
 
 function displayStatsTeam2(info) {
-	var team = info.own_record.average;
-	var opponent = info.opponents.average;
+	var team = info.stats.own_record.average;
+	var opponent = info.stats.opponents.average;
 
-	$(".js-mascot2").text(info.name);
-	$(".js-table-name-team2").text(info.market);
+	$(".js-rank-team2").text(info.rank.rank);
+	$(".js-sos-team2").text(info.rank.sos);
+	$(".js-rpi-team2").text(info.rank.rpi);
+	$(".js-table-name-team2").text(info.user.name);
 	$(".js-ppg-team2").text(team.points);
 	$(".js-opponent-ppg-team2").text(opponent.points);
 	$(".js-paint-points-team2").text(team.paint_pts);
@@ -49,18 +66,8 @@ function displayStatsTeam2(info) {
 	$(".js-opponent-threes-team2").text(opponent.three_points_made);
 };
 
-function displayRankTeam1(info) {
-	$(".js-wins-team1").text(info.wins);
-	$(".js-losses-team1").text(info.losses);
-	$(".js-rank-team1").text(info.rank);
-	$(".js-sos-team1").text(info.sos);
-	$(".js-rpi-team1").text(info.rpi);
-};
 
-function displayRankTeam2(info) {
-	$(".js-wins-team2").text(info.wins);
-	$(".js-losses-team2").text(info.losses);
-	$(".js-rank-team2").text(info.rank);
-	$(".js-sos-team2").text(info.sos);
-	$(".js-rpi-team2").text(info.rpi);
-}; 
+
+
+
+

@@ -1,9 +1,5 @@
 $(document).on("ready", function() {
 	// Team Controller API Calls. In team.js
-	$("#js-select-team1").on("change", findStatsTeam1);
-	$("#js-select-team2").on("change", findStatsTeam2);
-	$("#js-select-team1").on("change", findRankTeam1);
-	$("#js-select-team2").on("change", findRankTeam2);
 	$("#js-select-team1").on("change", findInfoTeam1);
 	$("#js-select-team2").on("change", findInfoTeam2);
 

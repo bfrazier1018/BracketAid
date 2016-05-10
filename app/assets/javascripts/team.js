@@ -1,10 +1,9 @@
-// ----------------- FIND TEAM INFO --------------------------
+// For API Calls and Finding Team Info and Stats
 function findInfoTeam1() {
-	var teamName  = $("#js-select-team1").val();
+	var teamName = $("#js-select-team1").val();
 
 	$.ajax({
-
-		url: `/api/info/${teamName}`,
+		url: `/api/master/${teamName}`,
 		success: function(data) {
 			// console.log(data);
 			displayInfoTeam1(data);
@@ -14,70 +13,13 @@ function findInfoTeam1() {
 };
 
 function findInfoTeam2() {
-	var teamName  = $("#js-select-team2").val();
+	var teamName = $("#js-select-team2").val();
 
 	$.ajax({
-
-		url: `/api/info/${teamName}`,
+		url: `/api/master/${teamName}`,
 		success: function(data) {
 			// console.log(data);
 			displayInfoTeam2(data);
-		},
-		error: printError,
-	});
-};
-
-function findStatsTeam1() {
-	var teamName = $("#js-select-team1").val();
-
-	$.ajax({
-
-		url: `/api/team/${teamName}`,
-		success: function(data) {
-			// console.log(data);
-			displayStatsTeam1(data)
-		},
-		error: printError,
-	});
-};
-
-function findStatsTeam2() {
-	var teamName = $("#js-select-team2").val();
-
-	$.ajax({
-
-		url: `/api/team/${teamName}`,
-		success: function(data) {
-			// console.log(data);
-			displayStatsTeam2(data);
-		},
-		error: printError,
-	});
-};
-
-function findRankTeam1() {
-	var teamName = $("#js-select-team1").val();
-
-	$.ajax({
-
-		url: `/api/rank/${teamName}`,
-		success: function(data) {
-			// console.log(data);
-			displayRankTeam1(data);
-		},
-		error: printError,
-	});
-};
-
-function findRankTeam2() {
-	var teamName = $("#js-select-team2").val();
-
-	$.ajax({
-
-		url: `/api/rank/${teamName}`,
-		success: function(data) {
-			// console.log(data);
-			displayRankTeam2(data);
 		},
 		error: printError,
 	});

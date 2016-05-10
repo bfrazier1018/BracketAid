@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
 .js-table-name-team1 {
 	text-align: center;
 }
@@ -27,5 +26,17 @@
 }
 
 .js-table-team2 tbody tr td:last-child{
+	text-align: center;
+}
+
+.js-table-advantage tbody tr td:last-child{
+	text-align: center;
+}
+
+.advantage {
+	text-align: center;
+}
+
+.js-predicted-winner {
 	text-align: center;
 }
