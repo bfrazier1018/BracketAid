@@ -5,7 +5,7 @@ function findInfoTeam1() {
 	$.ajax({
 		url: `/api/master/${teamName}`,
 		success: function(data) {
-			console.log(data);
+			// console.log(data);
 			displayInfoTeam1(data);
 		},
 		error: printError,

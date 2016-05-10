@@ -36,10 +36,12 @@ function displayStatsTeam1(info) {
 	$(".js-steals-team1").text(info.stats.steals);
 	$(".js-turnovers-team1").text(info.stats.turnovers);
 	$(".js-free-throws-team1").text((info.stats.free_throws_made / info.stats.free_throws_att).toFixed(2) * 100);
-	$(".js-field-goal-team1").text((info.stats.field_goals_made / info.stats.field_goals_att).toFixed(2) * 100)
-	$(".js-opponent-field-goal-team1").text((info.stats.opponent_field_goals_made / info.stats.opponent_field_goals_att).toFixed(2) * 100)
+	$(".js-field-goal-team1").text((info.stats.field_goals_made / info.stats.field_goals_att).toFixed(2) * 100);
+	$(".js-opponent-field-goal-team1").text((info.stats.opponent_field_goals_made / info.stats.opponent_field_goals_att).toFixed(2) * 100);
 	$(".js-opponent-threes-team1").text(info.stats.opponent_three_points_made);
 	$(".js-scoring-margin-team1").text((info.stats.points - info.stats.opponent_points).toFixed(2));
+	$(".js-final-score-team1").text(info.score[0]);
+	displayWinner(info);
 };
 
 function displayStatsTeam2(info) {
@@ -58,12 +60,24 @@ function displayStatsTeam2(info) {
 	$(".js-steals-team2").text(info.stats.steals);
 	$(".js-turnovers-team2").text(info.stats.turnovers);
 	$(".js-free-throws-team2").text((info.stats.free_throws_made / info.stats.free_throws_att).toFixed(2) * 100);
-	$(".js-field-goal-team2").text((info.stats.field_goals_made / info.stats.field_goals_att).toFixed(2) * 100)
-	$(".js-opponent-field-goal-team2").text((info.stats.opponent_field_goals_made / info.stats.opponent_field_goals_att).toFixed(2) * 100)
+	$(".js-field-goal-team2").text((info.stats.field_goals_made / info.stats.field_goals_att).toFixed(2) * 100);
+	$(".js-opponent-field-goal-team2").text((info.stats.opponent_field_goals_made / info.stats.opponent_field_goals_att).toFixed(2) * 100);
 	$(".js-opponent-threes-team2").text(info.stats.opponent_three_points_made);
-	$(".js-scoring-margin-team2").text((info.stats.points - info.stats.opponent_points).toFixed(2))
-
+	$(".js-scoring-margin-team2").text((info.stats.points - info.stats.opponent_points).toFixed(2));
+	$(".js-final-score-team2").text(info.score[0]);
+	displayWinner(info);
 };
+
+function displayWinner() {
+	if ($(".js-final-score-team1").text() > $(".js-final-score-team2").text() ) {
+		$(".js-predicted-winner").text($("#js-select-team1").val());
+	} else if ($(".js-final-score-team1").text() === $(".js-final-score-team2").text()) {
+		$(".js-predicted-winner").text("TIE");
+	} else if (($(".js-final-score-team2").text() > $(".js-final-score-team1").text() )) {
+		$(".js-predicted-winner").text($("#js-select-team2").val());
+	};
+};
+
 
 
 

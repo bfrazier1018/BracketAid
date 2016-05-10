@@ -6,15 +6,23 @@ class TeamController < ApplicationController
 	def master_api
 		team = Team.find_by(name: params[:name])
 		rank = Rank.find_by(name: params[:name])
-		stats = Stat.find_by(market: params[:name])
+		stat = Stat.find_by(market: params[:name])
+
+		score = [
+			((17 - team.seed) * 0.20) +
+			(rank.rpi * 0.35) +
+			((stat.points - stat.opponent_points) * 0.30) +
+			((stat.field_goals_made / stat.field_goals_att) * 0.10) +
+			((stat.free_throws_made / stat.free_throws_att) * 0.05)
+		]
 
 		render json: {
 			user: team,
 			rank: rank,
-			stats: stats
+			stats: stat,
+			score: score
 		}
-	end
-	
+	end	
 end
 
 	
