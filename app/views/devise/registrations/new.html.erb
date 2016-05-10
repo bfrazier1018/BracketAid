@@ -1,3 +1,4 @@
+<div class="container sign-up-page">
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -21,10 +22,13 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="field">
-    <%= f.label :favorite_team %><br>
-    <%= f.text_field :favorite_team, autofocus: true %><br>
-  </div>
+    <label for="favorite-team">Favorite Team:</label>
+    <select class="form-control" id="favorite-team" style="width: 200px">
+        <option>Northern Iowa</option>
+        <option>Yale</option>
+        <option>Oregon</option>
+        <option>Kansas</option>
+    </select>
 <br>
   <div class="actions">
     <%= f.submit "Sign up" %>
@@ -32,3 +36,5 @@
 <% end %>
 <br>
 <%= render "devise/shared/links" %>
+
+</div>

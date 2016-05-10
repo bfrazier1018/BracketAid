@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160508203613) do
+ActiveRecord::Schema.define(version: 20160510161008) do
 
   create_table "ranks", force: :cascade do |t|
     t.string   "name"
@@ -23,6 +23,33 @@ ActiveRecord::Schema.define(version: 20160508203613) do
     t.integer  "rank"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "stats", force: :cascade do |t|
+    t.string   "name"
+    t.string   "market"
+    t.float    "paint_pts"
+    t.float    "points"
+    t.float    "turnovers"
+    t.float    "free_throws_att"
+    t.float    "field_goals_att"
+    t.float    "off_rebounds"
+    t.float    "two_points_att"
+    t.float    "two_points_made"
+    t.float    "rebounds"
+    t.float    "three_points_made"
+    t.float    "free_throws_made"
+    t.float    "field_goals_made"
+    t.float    "steals"
+    t.float    "three_points_att"
+    t.float    "opponent_paint_pts"
+    t.float    "opponent_points"
+    t.float    "opponent_field_goals_made"
+    t.float    "opponent_field_goals_att"
+    t.float    "opponent_three_points_att"
+    t.float    "opponent_three_points_made"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
   create_table "teams", force: :cascade do |t|

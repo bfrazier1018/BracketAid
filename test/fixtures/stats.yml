@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  market: MyString
+  paint_pts: 1.5
+  points: 1.5
+  turnovers: 1.5
+  free_throws_att: 1.5
+  field_goals_att: 1.5
+  off_rebounds: 1.5
+  two_points_att: 1.5
+  two_points_made: 1.5
+  rebounds: 1.5
+  three_points_made: 1.5
+  free_throws_made: 1.5
+  field_goals_made: 1.5
+  steals: 1.5
+  three_points_att: 1.5
+  opponent_paint_pts: 1.5
+  opponent_points: 1.5
+  opponent_field_goals_made: 1.5
+  opponent_field_goals_att: 1.5
+  opponent_three_points_att: 1.5
+  opponent_three_points_made: 1.5
+
+two:
+  name: MyString
+  market: MyString
+  paint_pts: 1.5
+  points: 1.5
+  turnovers: 1.5
+  free_throws_att: 1.5
+  field_goals_att: 1.5
+  off_rebounds: 1.5
+  two_points_att: 1.5
+  two_points_made: 1.5
+  rebounds: 1.5
+  three_points_made: 1.5
+  free_throws_made: 1.5
+  field_goals_made: 1.5
+  steals: 1.5
+  three_points_att: 1.5
+  opponent_paint_pts: 1.5
+  opponent_points: 1.5
+  opponent_field_goals_made: 1.5
+  opponent_field_goals_att: 1.5
+  opponent_three_points_att: 1.5
+  opponent_three_points_made: 1.5

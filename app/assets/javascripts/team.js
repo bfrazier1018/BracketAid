@@ -5,7 +5,7 @@ function findInfoTeam1() {
 	$.ajax({
 		url: `/api/master/${teamName}`,
 		success: function(data) {
-			// console.log(data);
+			console.log(data);
 			displayInfoTeam1(data);
 		},
 		error: printError,
@@ -30,15 +30,3 @@ function printError(error) {
 	console.log("ERROR");
 	console.log(error.responseJSON);
 };
-
-// ------------------ FOR DATABASE USE ONLY ----------------------------
-function setDatabase() {
-	
-	$.ajax({
-		url: `api/database`,
-		success: function(data) {
-			console.log("success");
-		},
-		error: printError,
-	});
-} ;

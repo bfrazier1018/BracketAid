@@ -19,7 +19,7 @@ function displayInfoTeam2(info) {
 	displayStatsTeam2(info);
 };
 
-// ----------------- DISPLAY TEAM STATS. TABLE ---------------------
+// ----------------- DISPLAY TEAM STATS IN TABLE ---------------------
 function displayStatsTeam1(info) {
 	var team = info.stats.own_record.average;
 	var opponent = info.stats.opponents.average;
@@ -41,6 +41,7 @@ function displayStatsTeam1(info) {
 	$(".js-field-goal-team1").text((team.field_goals_made / team.field_goals_att).toFixed(2) * 100)
 	$(".js-opponent-field-goal-team1").text((opponent.field_goals_made / opponent.field_goals_att).toFixed(2) * 100)
 	$(".js-opponent-threes-team1").text(opponent.three_points_made);
+	$(".js-scoring-margin-team1").text((team.points - opponent.points).toFixed(2));
 };
 
 function displayStatsTeam2(info) {
@@ -64,6 +65,8 @@ function displayStatsTeam2(info) {
 	$(".js-field-goal-team2").text((team.field_goals_made / team.field_goals_att).toFixed(2) * 100)
 	$(".js-opponent-field-goal-team2").text((opponent.field_goals_made / opponent.field_goals_att).toFixed(2) * 100)
 	$(".js-opponent-threes-team2").text(opponent.three_points_made);
+	$(".js-scoring-margin-team2").text((team.points - opponent.points).toFixed(2));
+
 };
 
 
