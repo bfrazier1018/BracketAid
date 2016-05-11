@@ -3,6 +3,8 @@ $(document).on("ready", function() {
 	$(".confidence-level-header").empty();
 	$(".team-stats-row").hide();
 	$(".basic-team-info-row").hide();
+	$(".final-score-team1").hide();
+	$(".final-score-team2").hide();
 
 	// Team Controller API Calls. In team.js
 	$("#js-select-team1").on("change", function() {
@@ -17,6 +19,8 @@ $(document).on("ready", function() {
 		$(".confidence-level-header").text("Confidence Level");
 		$(".team-stats-row").show();
 		$(".basic-team-info-row").show();
+		$(".header-row").hide();
+		$(".main-image").slideUp();
 	});
 
 	// Bootstrap Login Modal

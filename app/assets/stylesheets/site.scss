@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// For Header Row
+.header-row{
+}
+// For h1 tag
+.welcome-header {
+	text-align: center;
+}
 /* Logo Team 1 Display */
 .js-logo-team1 {
 	width: 125px;
@@ -11,6 +18,14 @@
 	width: 125px;
 	position: relative;
 	left: 45px;
+}
+// For Mascot Name Team 1
+.js-mascot1 {
+	font-size: 16px;
+}
+// For Mascot Name Team 2
+.js-mascot2 {
+	font-size: 16px;
 }
 /* Team 1 Name in Table */
 .js-table-name-team1 {
@@ -31,6 +46,8 @@
 /* For Predicted Winner Header */
  .predicted-winner-header {
 	text-align: center;
+	font-size: 18px;
+	text-decoration: underline;
  }
 /* Winner Team Name Display */
 .js-predicted-winner {
@@ -40,8 +57,14 @@
 /* For Confidence Level Header */
 .confidence-level-header {
 	text-align: center;
+	text-decoration: underline;
+	font-size: 14px;
 }
 /* For Confidence Level Input */
 .js-confidence-level {
 	text-align: center;
+	font-size: 18px;
+}
+// For Image of Logos Row
+.all-logos-image-row {
 }
