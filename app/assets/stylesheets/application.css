@@ -13,40 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+/* Logo Team 1 Display */
 .js-logo-team1 {
 	width: 125px;
 }
-
+/* Logo Team 2 Display */
 .js-logo-team2 {
 	width: 125px;
+	position: relative;
+	left: 45px;
 }
-
+/* Team 1 Name in Table */
 .js-table-name-team1 {
 	text-align: center;
 }
-
+/* Team 2 Name in Table */
 .js-table-name-team2 {
 	text-align: center;
 }
-
+/* Center Stats Table 1 */
 .js-table-team1 tbody tr td:last-child{
 	text-align: center;
 }
-
+/* Center Stats Table 2 */
 .js-table-team2 tbody tr td:last-child{
 	text-align: center;
 }
-
-.js-table-advantage tbody tr td:last-child{
+/* For Predicted Winner Header */
+ h4 {
 	text-align: center;
-}
-
-.advantage {
-	text-align: center;
-}
-
+ }
+/* Winner Team Name Display */
 .js-predicted-winner {
 	text-align: center;
+	font-size: 20px;
 }
 
 .sign-up-container {
