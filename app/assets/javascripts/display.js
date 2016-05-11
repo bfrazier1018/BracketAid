@@ -41,6 +41,7 @@ function displayStatsTeam1(info) {
 	$(".js-opponent-threes-team1").text(info.stats.opponent_three_points_made);
 	$(".js-scoring-margin-team1").text((info.stats.points - info.stats.opponent_points).toFixed(2));
 	$(".js-final-score-team1").text(info.score[0]);
+	$(".js-logo-team1").prop("src", info.logo.src)
 	displayWinner(info);
 };
 
@@ -65,6 +66,7 @@ function displayStatsTeam2(info) {
 	$(".js-opponent-threes-team2").text(info.stats.opponent_three_points_made);
 	$(".js-scoring-margin-team2").text((info.stats.points - info.stats.opponent_points).toFixed(2));
 	$(".js-final-score-team2").text(info.score[0]);
+	$(".js-logo-team2").prop("src", info.logo.src)
 	displayWinner(info);
 };
 

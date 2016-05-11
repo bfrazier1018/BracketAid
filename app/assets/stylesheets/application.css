@@ -13,6 +13,14 @@
  *= require_tree .
  *= require_self
  */
+.js-logo-team1 {
+	width: 125px;
+}
+
+.js-logo-team2 {
+	width: 125px;
+}
+
 .js-table-name-team1 {
 	text-align: center;
 }
