@@ -10,8 +10,8 @@ class TeamController < ApplicationController
 
 		score = [
 			((17 - team.seed) * 0.20) +
-			(rank.rpi * 0.35) +
-			((stat.points - stat.opponent_points) * 0.30) +
+			(rank.rpi * 0.40) +
+			((stat.points - stat.opponent_points) * 0.25) +
 			((stat.field_goals_made / stat.field_goals_att) * 0.10) +
 			((stat.free_throws_made / stat.free_throws_att) * 0.05)
 		]
@@ -25,19 +25,6 @@ class TeamController < ApplicationController
 		}
 	end	
 
-		def scraper
-		require "open-uri"
-			# doc = Nokogiri::HTML(open("http://www.foxsports.com/college-football/teams"))
-			doc = Nokogiri::HTML(open("http://www.foxsports.com/college-football/teams?group=3"))
-			
-			entries = doc.css(".wisfb_fullTeamStacked")
-			
-			entries.each do |entry|
-				Logo.create(src: entry.css(".wisfb_logoImage")[0]["src"],
-				name: entry.css("span")[0].text)
-			end
-			render text: entries
-		end
 end
 
 	

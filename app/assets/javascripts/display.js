@@ -41,7 +41,12 @@ function displayStatsTeam1(info) {
 	$(".js-opponent-threes-team1").text(info.stats.opponent_three_points_made);
 	$(".js-scoring-margin-team1").text((info.stats.points - info.stats.opponent_points).toFixed(2));
 	$(".js-final-score-team1").text(info.score[0]);
-	$(".js-logo-team1").prop("src", info.logo.src)
+	if (info.logo !== null) {
+		$(".js-logo-team1").prop("src", info.logo.src);
+	}	else {
+		$(".js-logo-team1").prop("src", "https://www.nextflywebdesign.com/wp-content/uploads/2016/03/March-Madness-Logo-2.jpg")
+	}
+
 	displayWinner(info);
 };
 
@@ -66,7 +71,11 @@ function displayStatsTeam2(info) {
 	$(".js-opponent-threes-team2").text(info.stats.opponent_three_points_made);
 	$(".js-scoring-margin-team2").text((info.stats.points - info.stats.opponent_points).toFixed(2));
 	$(".js-final-score-team2").text(info.score[0]);
-	$(".js-logo-team2").prop("src", info.logo.src)
+	if (info.logo !== null) {
+		$(".js-logo-team2").prop("src", info.logo.src);
+	}	else {
+		$(".js-logo-team2").prop("src", "https://www.nextflywebdesign.com/wp-content/uploads/2016/03/March-Madness-Logo-2.jpg")
+	}
 	displayWinner(info);
 };
 
@@ -78,6 +87,21 @@ function displayWinner() {
 	} else if (($(".js-final-score-team2").text() > $(".js-final-score-team1").text() )) {
 		$(".js-predicted-winner").text($("#js-select-team2").val());
 	};
+	displayConfidenceLevel();
+};
+
+function displayConfidenceLevel() {
+	var difference = Math.abs(($(".js-final-score-team1").text() - $(".js-final-score-team2").text()));
+	console.log(difference);
+	if (difference < 0.5) {
+		$(".js-confidence-level").text("Flip a Coin");
+	} else if (difference >= 0.5 && difference < 1 ) {
+		$(".js-confidence-level").text("Fairly Confident");
+	} else if (difference >= 1 && difference < 2) {
+		$(".js-confidence-level").text("Very Confident");
+	} else {
+		$(".js-confidence-level").text("Bet the House");
+	}
 };
 
 

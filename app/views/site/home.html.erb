@@ -6,12 +6,15 @@
 			<div class="form-group">
 				  <label for="js-select-team1">Select First Team:</label>
 				  <select class="form-control" id="js-select-team1">
+				  	<option disabled selected>Select Team</option>
 				    <option>Oklahoma</option>
 				    <option>Villanova</option>
 				    <option>Oregon</option>
 				    <option>Kansas</option>
 				    <option>Oregon State</option>
 				    <option>Yale</option>
+				    <option>Miami (FL)</option>
+				    <option>North Carolina-Wilmington</option>
 				  </select>
 			</div>
 		</div> 
@@ -20,12 +23,15 @@
 			<div class="form-group">
 				  <label for="js-select-team2">Select Second Team:</label>
 				  <select class="form-control" id="js-select-team2">
+				  	<option disabled selected>Select Team</option>
 				    <option>Oregon State</option>
 				    <option>Yale</option>
-				    <option>Florida Gulf Coast</option>
+				    <option>Michigan State</option>
 				    <option>North Carolina</option>
 				    <option>Kansas</option>
 				    <option>Villanova</option>
+				    <option>Northern Iowa</option>
+				    <option>Virginia</option>
 				  </select>
 			</div>
 		</div> 
@@ -44,12 +50,12 @@
 			<p>Seed: <span class="js-seed-team1"></span> </p>
 		</div> 
 
-		<div class="col-md-2 col-md-offset-2 predicted-winner">
-			<h4>Predicted Winner</h4>
+		<div class="col-md-4 col-md-offset-1 predicted-winner">
+			<h4 class="predicted-winner-header">Predicted Winner</h4>
 			<p class="js-predicted-winner"></p>
 		</div>
 
-		<div class="col-md-1 col-md-offset-2">
+		<div class="col-md-1 col-md-offset-1">
 			<p class="js-mascot2">Mascot 2</p>
 			<p>( <span class="js-wins-team2"></span> - <span class="js-losses-team2"></span> )</p>
 			<p>Seed: <span class="js-seed-team2"></span> </p>
@@ -148,7 +154,12 @@
 			</table>
 		</div> 
 
-		<div class="col-md-4 col-md-offset-4">
+		<div class="col-md-2 col-md-offset-1">
+			<p class="confidence-level-header">Confidence Level</p>
+			<p class="js-confidence-level"></p>
+		</div>
+
+		<div class="col-md-4 col-md-offset-1">
 			<table class="table table-bordered table-condensed table-striped js-table-team2">
 				<thead>
 					<tr>

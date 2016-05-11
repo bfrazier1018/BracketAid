@@ -1,3 +1,47 @@
 // Place all the styles related to the site controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Logo Team 1 Display */
+.js-logo-team1 {
+	width: 125px;
+}
+/* Logo Team 2 Display */
+.js-logo-team2 {
+	width: 125px;
+	position: relative;
+	left: 45px;
+}
+/* Team 1 Name in Table */
+.js-table-name-team1 {
+	text-align: center;
+}
+/* Team 2 Name in Table */
+.js-table-name-team2 {
+	text-align: center;
+}
+/* Center Stats Table 1 */
+.js-table-team1 tbody tr td:last-child{
+	text-align: center;
+}
+/* Center Stats Table 2 */
+.js-table-team2 tbody tr td:last-child{
+	text-align: center;
+}
+/* For Predicted Winner Header */
+ .predicted-winner-header {
+	text-align: center;
+ }
+/* Winner Team Name Display */
+.js-predicted-winner {
+	text-align: center;
+	font-size: 32px;
+}
+/* For Confidence Level Header */
+.confidence-level-header {
+	text-align: center;
+}
+/* For Confidence Level Input */
+.js-confidence-level {
+	text-align: center;
+}
