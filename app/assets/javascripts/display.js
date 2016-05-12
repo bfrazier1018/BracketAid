@@ -107,18 +107,45 @@ function displayConfidenceLevel() {
 	// console.log(difference);
 	if (difference < 0.5) {
 		$(".js-confidence-level").text("Flip a Coin");
-	} else if (difference >= 0.5 && difference < 1 ) {
+	} else if (difference >= 0.5 && difference < 1.3 ) {
 		$(".js-confidence-level").text("Fairly Confident");
-	} else if (difference >= 1 && difference < 2) {
+	} else if (difference >= 1.3 && difference < 3.0) {
 		$(".js-confidence-level").text("Very Confident");
 	} else {
 		$(".js-confidence-level").text("Bet the House");
 	}
 };
 
+function displayScheduleTeam1(games) {
+	$(".js-schedule-modal-team1").empty();
 
+	games.forEach(function(game) {
+		var html = `
+		<tr>
+			<td>${game.date}</td>
+			<td>${game.opponent}</td>
+			<td>${game.result} ${game.score}</td>
+		</tr>`;
+	
+		$(".js-schedule-modal-team1").append(html);
+	});
 
+};
 
+function displayScheduleTeam2(games) {
+	$(".js-schedule-modal-team2").empty();
 
+	games.forEach(function(game) {
+		var html = `
+		<tr>
+			<td>${game.date}</td>
+			<td>${game.opponent}</td>
+			<td>${game.result} ${game.score}</td>
+		</tr>`;
+	
+		$(".js-schedule-modal-team2").append(html);
+	});
+
+};
 
 

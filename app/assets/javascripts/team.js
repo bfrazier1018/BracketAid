@@ -25,6 +25,33 @@ function findInfoTeam2() {
 	});
 };
 
+function findScheduleTeam1() {
+	var teamName = $("#js-select-team1").val();
+
+	$.ajax({
+		url: `/api/schedule/${teamName}`,
+		success: function(data) {
+			// console.log(data);
+			displayScheduleTeam1(data);
+		},
+		error: printError,
+	});
+};
+
+function findScheduleTeam2() {
+	var teamName = $("#js-select-team1").val();
+
+	$.ajax({
+		url: `/api/schedule/${teamName}`,
+		success: function(data) {
+			// console.log(data);
+			displayScheduleTeam2(data);
+		},
+		error: printError,
+	});
+};
+
+
 // ---------------------  ERROR FUNCTION ------------------------------
 function printError(error) {
 	console.log("ERROR");

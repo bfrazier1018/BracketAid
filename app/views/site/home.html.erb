@@ -14,7 +14,7 @@
 			<%= render "select2" %>
 		</div> 
 	</div> 
-	<!-- ******** END SELECT FORM ROW *************-->
+	<!-- ******** END SELECT FORM ROW ***********-->
 
 	<div class="row basic-team-info-row">
 
@@ -45,7 +45,7 @@
 			<img src="#" alt="Team Logo" class="js-logo-team2">
 		</div> 
 	</div> 
-	<!-- *********** END BASIC TEAM INFO ROW ************ -->
+	<!-- ******* END BASIC TEAM INFO ROW *********** -->
 	
 	<div class="row team-stats-row">
 
@@ -56,6 +56,8 @@
 		<div class="col-md-2 col-md-offset-1">
 			<p class="confidence-level-header">Confidence Level</p>
 			<p class="js-confidence-level"></p>
+			<br>
+			<button class="btn btn-danger js-compare-schedule-button">Compare Schedules</button>
 		</div>
 
 		<div class="col-md-4 col-md-offset-1">
@@ -63,6 +65,8 @@
 		</div> 
 	</div>
 	 <!-- ******* END TEAM STATS ROW *************-->
+	
+	<%= render "schedule_modal" %>
 </div>
  <!-- ******* End Container Divide ******* -->
 
