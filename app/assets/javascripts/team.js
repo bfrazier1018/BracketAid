@@ -39,7 +39,7 @@ function findScheduleTeam1() {
 };
 
 function findScheduleTeam2() {
-	var teamName = $("#js-select-team1").val();
+	var teamName = $("#js-select-team2").val();
 
 	$.ajax({
 		url: `/api/schedule/${teamName}`,

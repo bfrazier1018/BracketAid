@@ -31,12 +31,6 @@ $(document).on("ready", function() {
 		$("#schedule-modal").modal("show");
 	})
 
-	// Bootstrap Login Modal
-	$(".js-login").on("click", function() {
-		event.preventDefault();
-		// $("#login-modal").modal("show");
-		findResults();
-	});
 });
 
 

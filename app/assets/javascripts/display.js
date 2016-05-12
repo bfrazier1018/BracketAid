@@ -118,6 +118,7 @@ function displayConfidenceLevel() {
 
 function displayScheduleTeam1(games) {
 	$(".js-schedule-modal-team1").empty();
+	$(".schedule-modal-name-team1").text($("#js-select-team1").val());
 
 	games.forEach(function(game) {
 		var html = `
@@ -134,6 +135,7 @@ function displayScheduleTeam1(games) {
 
 function displayScheduleTeam2(games) {
 	$(".js-schedule-modal-team2").empty();
+	$(".schedule-modal-name-team2").text($("#js-select-team2").val());
 
 	games.forEach(function(game) {
 		var html = `
