@@ -7,92 +7,11 @@
 	<div class="row select-teams-row">
 		
 		<div class="col-md-3 col-md-offset-2">
-			<div class="form-group">
-				  <label for="js-select-team1">Select First Team:</label>
-				  <select class="form-control" id="js-select-team1">
-				  	<option disabled selected>Select Team</option>
-				    <option>Arizona</option>
-				    <option>Arkansas-Little Rock</option>
-				    <option>Austin Peay</option>
-				    <option>Baylor</option>
-				    <option>Buffalo</option>
-				    <option>Butler</option>
-				    <option>Cal State Bakersfield</option>
-				    <option>California</option>
-				    <option>Chattanooga</option>
-				    <option>Cincinnati</option>
-				    <option>Colorado</option>
-				    <option>Connecticut</option>
-				    <option>Dayton</option>
-				    <option>Duke</option>
-				    <option>Fairleigh Dickinson</option>
-				    <option>Florida Gulf Coast</option>
-				    <option>Fresno State</option>
-				    <option>Gonzaga</option>
-				    <option>Green Bay</option>
-				    <option>Hampton</option>
-				    <option>Hawaii</option>
-				    <option>Holy Cross</option>
-				    <option>Indiana</option>
-				    <option>Iona</option>
-				    <option>Iowa</option>
-				    <option>Iowa State</option>
-				    <option>Kansas</option>
-				    <option>Kentucky</option>
-				    <option>Maryland</option>
-				    <option>Miami (FL)</option>
-				    <option>Michigan</option>
-				    <option>Michigan State</option>
-				    <option>Middle Tennessee</option>
-				    <option>North Carolina</option>
-				    <option>North Carolina-Wilmington</option>
-				    <option>Northern Iowa</option>
-				    <option>Notre Dame</option>
-				    <option>Oklahoma</option>
-				    <option>Oregon</option>
-				    <option>Oregon State</option>
-				    <option>Pittsburgh</option>
-				    <option>Providence</option>
-				    <option>Purdue</option>
-				    <option>Saint Joseph's (PA)</option>
-				    <option>Seton Hall</option>
-				    <option>South Dakota State</option>
-				    <option>Southern University</option>
-				    <option>Stony Brook</option>
-				    <option>Syracuse</option>
-				    <option>Temple</option>
-				    <option>Texas</option>
-				    <option>Texas A&M</option>
-				    <option>Texas Tech</option>
-				    <option>Tulsa</option>
-				    <option>UNC Asheville</option>
-				    <option>USC</option>
-				    <option>Utah</option>
-				    <option>Vanderbilt</option>
-				    <option>Villanova</option>
-				    <option>Virginia</option>
-				    <option>Virginia Commonwealth</option>
-				    <option>Weber State</option>
-				    <option>West Virginia</option>
-				    <option>Wichita State</option>
-				    <option>Wisconsin</option>
-				    <option>Xavier</option>
-				    <option>Yale</option>
-				  </select>
-			</div>
+			<%= render "select1" %>
 		</div> 
 
 		<div class="col-md-3 col-md-offset-2">
-			<div class="form-group">
-				  <label for="js-select-team2">Select Second Team:</label>
-				  <select class="form-control" id="js-select-team2">
-				  	<option disabled selected>Select Team</option>
-				    <option>Kansas</option>
-				    <option>Villanova</option>
-				    <option>Notre Dame</option>
-				    <option>Virginia</option>
-				  </select>
-			</div>
+			<%= render "select2" %>
 		</div> 
 	</div> 
 	<!-- ******** END SELECT FORM ROW *************-->
@@ -131,88 +50,7 @@
 	<div class="row team-stats-row">
 
 		<div class="col-md-4 col-md-offset-0">
-			<table class="table table-bordered table-condensed table-striped js-table-team1">
-				<thead>
-					<tr>
-						<th>Season Stats (Average)</th>
-						<th class="js-table-name-team1">Team 1</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="final-score-team1">
-						<td>Final Score</td>
-						<td class="js-final-score-team1">0</td>
-					</tr>
-					<tr>
-						<td>Current Rank</td>
-						<td class="js-rank-team1">0</td>
-					</tr>
-					<tr>
-						<td>Strength of Schedule</td>
-						<td class="js-sos-team1">0</td>
-					</tr>
-					<tr>
-						<td>Rating Percentage Index (RPI)</td>
-						<td class="js-rpi-team1">0</td>
-					</tr>
-					<tr>
-						<td>Scoring Margin</td>
-						<td class="js-scoring-margin-team1">0</td>
-					</tr>
-					<tr>
-						<td>Points Per Game</td>
-						<td class="js-ppg-team1">0</td>
-					</tr>
-					<tr>
-						<td>Opponents Points Per Game</td>
-						<td class="js-opponent-ppg-team1">0</td>
-					</tr>
-					<tr>
-						<td>Field Goal Percentage</td>
-						<td><span class="js-field-goal-team1"></span>%</td>
-					</tr>
-					<tr>
-						<td>Opponent Field Goal Percentage</td>
-						<td><span class="js-opponent-field-goal-team1"></span>%</td>
-					</tr>
-					<tr>
-						<td>Free Throw Percentage</td>
-						<td><span class="js-free-throws-team1"></span>%</td>
-					</tr>
-					<tr>
-						<td>Points in the Paint</td>
-						<td class="js-paint-points-team1">0</td>
-					</tr>
-					<tr>
-						<td>Opponent Points in the Paint</td>
-						<td class="js-opponent-paint-points-team1">0</td>
-					</tr>
-					<tr>
-						<td>Three Pointers Made</td>
-						<td class="js-threes-team1">0</td>
-					</tr>
-					<tr>
-						<td>Three Pointers Against</td>
-						<td class="js-opponent-threes-team1">0</td>
-					</tr>
-					<tr>
-						<td>Rebounds</td>
-						<td class="js-rebounds-team1">0</td>
-					</tr>
-					<tr>
-						<td>Offensive Rebounds</td>
-						<td class="js-offensive-rebounds-team1">0</td>
-					</tr>
-					<tr>
-						<td>Steals</td>
-						<td class="js-steals-team1">0</td>
-					</tr>
-					<tr>
-						<td>Turnovers</td>
-						<td class="js-turnovers-team1">0</td>
-					</tr>
-				</tbody>
-			</table>
+			<%= render "table1" %>
 		</div> 
 
 		<div class="col-md-2 col-md-offset-1">
@@ -221,88 +59,7 @@
 		</div>
 
 		<div class="col-md-4 col-md-offset-1">
-			<table class="table table-bordered table-condensed table-striped js-table-team2">
-				<thead>
-					<tr>
-						<th>Season Stats (Average)</th>
-						<th class="js-table-name-team2">Team 2</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="final-score-team2">
-						<td>Final Score</td>
-						<td class="js-final-score-team2">0</td>
-					</tr>
-					<tr>
-						<td>Current Rank</td>
-						<td class="js-rank-team2">0</td>
-					</tr>
-					<tr>
-						<td>Strength of Schedule</td>
-						<td class="js-sos-team2">0</td>
-					</tr>
-					<tr>
-						<td>Rating Percentage Index (RPI)</td>
-						<td class="js-rpi-team2">0</td>
-					</tr>
-					<tr>
-						<td>Scoring Margin</td>
-						<td class="js-scoring-margin-team2">0</td>
-					</tr>
-					<tr>
-						<td>Points Per Game</td>
-						<td class="js-ppg-team2">0</td>
-					</tr>
-					<tr>
-						<td>Opponents Points Per Game</td>
-						<td class="js-opponent-ppg-team2">0</td>
-					</tr>
-					<tr>
-						<td>Field Goal Percentage</td>
-						<td><span class="js-field-goal-team2"></span>%</td>
-					</tr>
-					<tr>
-						<td>Opponent Field Goal Percentage</td>
-						<td><span class="js-opponent-field-goal-team2"></span>%</td>
-					</tr>
-					<tr>
-						<td>Free Throw Percentage</td>
-						<td><span class="js-free-throws-team2"></span>%</td>
-					</tr>
-					<tr>
-						<td>Points in the Paint</td>
-						<td class="js-paint-points-team2">0</td>
-					</tr>
-					<tr>
-						<td>Opponent Points in the Paint</td>
-						<td class="js-opponent-paint-points-team2">0</td>
-					</tr>
-					<tr>
-						<td>Three Pointers Made</td>
-						<td class="js-threes-team2">0</td>
-					</tr>
-					<tr>
-						<td>Three Pointers Against</td>
-						<td class="js-opponent-threes-team2">0</td>
-					</tr>
-					<tr>
-						<td>Rebounds</td>
-						<td class="js-rebounds-team2">0</td>
-					</tr>
-					<tr>
-						<td>Offensive Rebounds</td>
-						<td class="js-offensive-rebounds-team2">0</td>
-					</tr>
-					<tr>
-						<td>Steals</td>
-						<td class="js-steals-team2">0</td>
-					</tr>
-					<tr>
-						<td>Turnovers</td>
-						<td class="js-turnovers-team2">0</td>
-					</tr>
-				</tbody>
-			</table>
+			<%= render "table2" %>
 		</div> 
 	</div>
 	 <!-- ******* END TEAM STATS ROW *************-->
