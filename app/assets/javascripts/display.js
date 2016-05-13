@@ -41,11 +41,11 @@ function displayStatsTeam1(info) {
 	$(".js-opponent-threes-team1").text(info.stats.opponent_three_points_made);
 	$(".js-scoring-margin-team1").text((info.stats.points - info.stats.opponent_points).toFixed(2));
 	$(".js-final-score-team1").text(info.score[0]);
-	if (info.schedule !== null) {
-		$(".js-schedule-team1").prop("href", info.schedule.href);
-	} else {
-		$(".js-schedule-team1").prop("href", "http://espn.go.com/mens-college-basketball/teams");
-	}
+	// if (info.schedule !== null) {
+	// 	$(".js-schedule-team1").prop("href", info.schedule.href);
+	// } else {
+	// 	$(".js-schedule-team1").prop("href", "http://espn.go.com/mens-college-basketball/teams");
+	// }
 
 	if (info.logo !== null) {
 		$(".js-logo-team1").prop("src", info.logo.src);
@@ -77,11 +77,11 @@ function displayStatsTeam2(info) {
 	$(".js-opponent-threes-team2").text(info.stats.opponent_three_points_made);
 	$(".js-scoring-margin-team2").text((info.stats.points - info.stats.opponent_points).toFixed(2));
 	$(".js-final-score-team2").text(info.score[0]);
-	if (info.schedule !== null) {
-		$(".js-schedule-team2").prop("href", info.schedule.href);
-	} else {
-		$(".js-schedule-team2").prop("href", "http://espn.go.com/mens-college-basketball/teams");
-	}
+	// if (info.schedule !== null) {
+	// 	$(".js-schedule-team2").prop("href", info.schedule.href);
+	// } else {
+	// 	$(".js-schedule-team2").prop("href", "http://espn.go.com/mens-college-basketball/teams");
+	// }
 
 	if (info.logo !== null) {
 		$(".js-logo-team2").prop("src", info.logo.src);
