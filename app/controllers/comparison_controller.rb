@@ -1,9 +1,12 @@
 class ComparisonController < ApplicationController
 
-	def index
+	def genies_bracket
 
 	end
 
-	def play
+	def show
+	end
+
+	def my_bracket
 	end
 end

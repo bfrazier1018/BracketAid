@@ -2,9 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.bracket-container {
+	background-color: #efedee
+}
+
 .bracket {
-	border: 1px solid black;
-	background-color: #c0c0c0;
+	border: 1px solid #00ccff;
+	background-color: #ffffff;
+	font-size: 14px;
+	
 }
 
 .left-side {
@@ -27,6 +33,7 @@
 
 .final-four {
 	font-size: 18px;
+	text-align: center;
 }
 
 .championship {

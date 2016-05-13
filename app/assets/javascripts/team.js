@@ -51,7 +51,6 @@ function findScheduleTeam2() {
 	});
 };
 
-
 // ---------------------  ERROR FUNCTION ------------------------------
 function printError(error) {
 	console.log("ERROR");
