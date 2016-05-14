@@ -11,8 +11,8 @@ class TeamController < ApplicationController
 		games = Game.all
 		
 		score = [
-			((17 - team.seed) * 0.20) +
-			(rank.rpi * 0.40) +
+			((17 - team.seed) * 0.10) +
+			(rank.rpi * 0.50) +
 			((stat.points - stat.opponent_points) * 0.25) +
 			((stat.field_goals_made / stat.field_goals_att) * 0.10) +
 			((stat.free_throws_made / stat.free_throws_att) * 0.05)
