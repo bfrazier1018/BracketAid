@@ -93,11 +93,11 @@ function displayStatsTeam2(info) {
 
 function displayWinner() {
 	if ($(".js-final-score-team1").text() > $(".js-final-score-team2").text() ) {
-		$(".js-predicted-winner").text($("#js-select-team1").val());
+		$(".js-predicted-winner").text($(".js-table-name-team1").text());
 	} else if ($(".js-final-score-team1").text() === $(".js-final-score-team2").text()) {
 		$(".js-predicted-winner").text("TIE");
 	} else if (($(".js-final-score-team2").text() > $(".js-final-score-team1").text() )) {
-		$(".js-predicted-winner").text($("#js-select-team2").val());
+		$(".js-predicted-winner").text($(".js-table-name-team2").text());
 	};
 	displayConfidenceLevel();
 };
@@ -118,7 +118,7 @@ function displayConfidenceLevel() {
 
 function displayScheduleTeam1(games) {
 	$(".js-schedule-modal-team1").empty();
-	$(".schedule-modal-name-team1").text($("#js-select-team1").val());
+	$(".schedule-modal-name-team1").text($(".js-table-name-team1").text());
 
 	games.forEach(function(game) {
 		var html = `
@@ -135,7 +135,7 @@ function displayScheduleTeam1(games) {
 
 function displayScheduleTeam2(games) {
 	$(".js-schedule-modal-team2").empty();
-	$(".schedule-modal-name-team2").text($("#js-select-team2").val());
+	$(".schedule-modal-name-team2").text($(".js-table-name-team2").text());
 
 	games.forEach(function(game) {
 		var html = `

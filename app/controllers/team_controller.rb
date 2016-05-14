@@ -8,6 +8,7 @@ class TeamController < ApplicationController
 		stat = Stat.find_by(market: params[:name])
 		logo = Logo.find_by(name: params[:name])
 		schedule = Schedule.find_by(name: params[:name])
+		games = Game.all
 		
 		score = [
 			((17 - team.seed) * 0.20) +
@@ -23,7 +24,8 @@ class TeamController < ApplicationController
 			stats: stat,
 			score: score,
 			logo: logo,
-			schedule: schedule
+			schedule: schedule,
+			games: games
 		}
 	end	
 

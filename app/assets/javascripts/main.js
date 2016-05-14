@@ -1,4 +1,12 @@
 $(document).on("ready", function() {
+	
+// --------------- FOR GAME SHOW PAGE -------------------------- 
+	findGameTeam1();
+	findGameTeam2();
+	$(".js-game-name-team1").hide();
+	$(".js-game-name-team2").hide();
+
+// ---------------------- FOR HOME PAGE ----------------------------------
 	$(".predicted-winner-header").empty();
 	$(".confidence-level-header").empty();
 	$(".team-stats-row").hide();
@@ -25,7 +33,7 @@ $(document).on("ready", function() {
 		findScheduleTeam2();
 	});
 
-	// Compare Schedules Button
+ // ------------ Compare Schedules Button ------------------------
 	$(".js-compare-schedule-button").on("click", function() {
 		event.preventDefault();
 		$("#schedule-modal").modal("show");

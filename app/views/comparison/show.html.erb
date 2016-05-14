@@ -1,22 +1,30 @@
 <div class="container">
+	<div class="row game-description-row">
+		<h1><%= @game.home_team %> vs <%= @game.away_team %></h1>
+			<%= @game.title %>
 
-	<div class="row header-row">
-		<h1 class="welcome-header">Welcome to Bracket Genie</h1>
-	</div>
+		<h3><%= @game.venue %></h3>
+		<h4><%= @game.city%>, <%= @game.state %></h4>
+		<br>
+		<% if @game.id <= 35 && @game.id > 5 %>
+	
+			<%= link_to "< Previous Game", "/comparison/#{@subtract_id}" %>
+			<%= link_to "Next Game >", "/comparison/#{@add_id}" %>
 
-	<div class="row select-teams-row">
-		
-		<div class="col-md-3 col-md-offset-2">
-			<%= render "select1" %>
-		</div> 
+		<% elsif @game.id <= 5 %>
 
-		<div class="col-md-3 col-md-offset-2">
-			<%= render "select2" %>
-		</div> 
-	</div> 
-	<!-- ******** END SELECT FORM ROW ***********-->
+			<%= link_to "Next Game >", "/comparison/#{@add_id}" %>
 
-	<div class="row basic-team-info-row">
+		<% else %>
+
+			<%= link_to "Finished", "#" %>
+		<% end %>
+		<br>
+		<p class="js-game-name-team1"><%= @game.team_1 %></p> 
+		<p class="js-game-name-team2"><%= @game.team_2 %></p>
+	</div> <!-- End Game Description Row -->
+	<br>
+	<div class="row">
 
 		<div class="col-md-1">
 			<img src="#" alt="Team Logo" class="js-logo-team1">
@@ -45,7 +53,7 @@
 	</div> 
 	<!-- ******* END BASIC TEAM INFO ROW *********** -->
 	
-	<div class="row team-stats-row">
+	<div class="row">
 
 		<div class="col-md-4 col-md-offset-0">
 			<%= render "shared/table1" %>
@@ -66,6 +74,5 @@
 	
 	<%= render "shared/schedule_modal" %>
 </div>
- <!-- ******* End Container Divide ******* -->
 
-
+</div> <!-- End Container Fluid -->
