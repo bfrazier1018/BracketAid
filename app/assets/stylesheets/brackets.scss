@@ -1,0 +1,48 @@
+// Place all the styles related to the brackets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.bracket-container {
+	background-color: #efedee;
+}
+
+.bracket-table {
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: middle;
+  width: 140px;
+}
+
+td div {
+  border: solid 1px #00ccff;
+  margin-top: 2px;
+  padding: 5px 5px 2px 5px;
+  background-color: #ffffff;
+  color: #00375C;
+}
+
+.right-side {
+	text-align: right;
+	padding-right: 2px;
+}
+
+.final-four {
+	text-align: center;
+	border: 1px solid red;
+	font-size: 18px;
+}
+
+.national-championship {
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+	color: #00375C;
+}
+
+.final-four-image {
+	width: 150px;
+	position: relative;
+	bottom: 90px;
+	left: 30px;
+}

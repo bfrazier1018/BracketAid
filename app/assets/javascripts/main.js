@@ -1,5 +1,5 @@
 $(document).on("ready", function() {
-	
+
 // --------------- FOR GAME SHOW PAGE -------------------------- 
 	findGameTeam1();
 	findGameTeam2();
@@ -38,7 +38,8 @@ $(document).on("ready", function() {
 		event.preventDefault();
 		$("#schedule-modal").modal("show");
 	})
-
 });
+
+
 
 
