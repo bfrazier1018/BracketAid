@@ -1,10 +1,40 @@
 // Place all the styles related to the site controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-// For Header Row
-.header-row{
+.home-container {
+	background-image: url("http://www.psdgraphics.com/file/basketball-floor.jpg");
 }
+// For Header Row
+.js-table-team1 {
+	border: 4px solid black;
+}
+
+.js-table-team1 td {
+	color: black;
+	border: 2px solid white;
+	background-color: #d8d8d8;
+}
+
+.table-header-team1 {
+	background-color: #cc0000;
+	color: white;
+}
+
+.js-table-team2 {
+	border: 4px solid black;
+}
+
+.js-table-team2 td {
+	color: black;
+	border: 2px solid white;
+	background-color: #d8d8d8;
+}
+
+.table-header-team2 {
+	background-color: #cc0000;
+	color: white;
+}
+
 // For h1 tag
 .welcome-header {
 	text-align: center;

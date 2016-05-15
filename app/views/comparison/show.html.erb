@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container comparison-container">
 	<div class="row game-description-row">
 		<h1><%= @game.home_team %> vs <%= @game.away_team %></h1>
 			<%= @game.title %>
@@ -63,7 +63,7 @@
 			<p class="confidence-level-header">Confidence Level</p>
 			<p class="js-confidence-level"></p>
 			<br>
-			<button class="btn btn-danger js-compare-schedule-button">Compare Schedules</button>
+			<button class="btn btn-primary js-compare-schedule-button">Compare Schedules</button>
 		</div>
 
 		<div class="col-md-4 col-md-offset-1">
