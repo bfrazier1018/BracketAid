@@ -2,7 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .bracket-container {
-	background-color: #efedee;
+	// background-color: #efedee;
+	background-image: url("http://www.psdgraphics.com/file/basketball-floor.jpg");
 }
 
 .bracket-table {
@@ -15,11 +16,11 @@
 }
 
 td div {
-  border: solid 1px #00ccff;
+  border: solid 1px #cc0000;
   margin-top: 2px;
   padding: 5px 5px 2px 5px;
-  background-color: #ffffff;
-  color: #00375C;
+  background-color: #d8d8d8;
+  color: black;
 }
 
 .right-side {
@@ -29,15 +30,16 @@ td div {
 
 .final-four {
 	text-align: center;
-	border: 1px solid red;
+	border: 1px solid #cc0000;
 	font-size: 18px;
+	background-color: #d8d8d8;
 }
 
 .national-championship {
 	font-size: 20px;
 	margin-top: 10px;
 	text-align: center;
-	color: #00375C;
+	color: black;
 }
 
 .final-four-image {

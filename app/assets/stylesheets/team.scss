@@ -1,19 +1,35 @@
-// For Schedule Modal
+// --------- For Schedule Modal --------------------
+// For Modal Header Section
 .schedule-modal-header-div {
-	background-color: #cc0000;
+	background-color: #0275d8;
 }
 
+// For "2015 -2016 Schedule"
 .schedule-modal-title {
 	color: white;
 	text-align: center;
 }
 
+// For Team Names Above Table
 .schedule-modal-name-team1 {
 	text-align: center;
-	font-size: 22px;
+	font-size: 24px;
 }
 
 .schedule-modal-name-team2 {
 	text-align: center;
-	font-size: 22px;
+	font-size: 24px;
+}
+
+// For Table Data
+.schedule-modal-table td {
+	color: black;
+	border: 2px solid white;
+	background-color: #d8d8d8;
+}
+
+// For Table Header Section
+.schedule-modal-table-header {
+	background-color: #cc0000;
+	color: white;
 }
