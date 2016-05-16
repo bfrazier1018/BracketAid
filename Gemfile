@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'sprockets', '>= 3.0.0'
+gem 'sprockets-es6'
+# For Devise User Sign Up and Log In
 gem "devise"
 # For calling the API from Rails
 gem "httparty"
