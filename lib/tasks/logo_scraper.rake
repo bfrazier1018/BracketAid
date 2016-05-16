@@ -10,6 +10,8 @@ namespace :logo_scraper do
 			entries.each do |entry|
 				Logo.create(src: entry.css(".wisfb_logoImage")[0]["src"],
 				name: entry.css("span")[0].text)
+
+				sleep 1
 			end
 			
   end
