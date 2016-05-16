@@ -1,10 +1,10 @@
 namespace :sport_radar do
   desc "TODO"
   task save_stats: :environment do
-  	
+
   	teams_id = Team.all.pluck(:team_id)
 		 teams_id.each do |id|
-			response = HTTParty.get("http://api.sportradar.us/ncaamb-t3/seasontd/2015/REG/teams/#{id}/statistics.json?api_key=t8533xedsh9yewxfka46mq5u")
+			response = HTTParty.get("http://api.sportradar.us/ncaamb-t3/seasontd/2015/REG/teams/#{id}/statistics.json?api_key=kd5anag94k7zegqgzeyyxg4j")
 			Stat.create(
 				name: response["name"], 
 				market: response["market"], 
@@ -33,24 +33,5 @@ namespace :sport_radar do
 			sleep 2
 		end
   end
-		# Find and Save teams Id, Name, and Tourny Rank to Database
-		# response = HTTParty.get("http://api.sportradar.us/ncaamb-t3/tournaments/608152a4-cccc-4569-83ac-27062580099e/summary.json?api_key=t8533xedsh9yewxfka46mq5u")
-		# body = response.parsed_response["brackets"]
 		
-		# body.each do |bracket|
-		# 	bracket["participants"].each do |team|
-		# 		Team.create(name: team["market"], team_id: team["id"], seed: team["seed"])
-		# 	end
-		# end
-
-		# Find and Save SOS, Wins, Losses, RPI, Name, Team Id
-		# response = HTTParty.get("http://api.sportradar.us/ncaamb-t3/polls/rpi/2015/rankings.json?api_key=t8533xedsh9yewxfka46mq5u")
-		# body = response.parsed_response["rankings"]
-		
-		# body.each do |team|
-		# 	Rank.create(name: team["market"], rank: team["rank"], wins: team["wins"], losses: team["losses"], sos: team["sos"], rpi: team["rpi"], team_id: team["id"])
-		# end		
-		
-		# render json: parsed_response
-
 end

@@ -1,8 +1,11 @@
 $(document).on("ready", function() {
 
 // --------------- FOR GAME SHOW PAGE -------------------------- 
-	findGameTeam1();
-	findGameTeam2();
+	if ($(".js-game-show-page").length > 0) {
+		findGameTeam1();
+		findGameTeam2();
+	}
+
 	$(".js-game-name-team1").hide();
 	$(".js-game-name-team2").hide();
 
