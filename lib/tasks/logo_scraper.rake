@@ -11,7 +11,7 @@ namespace :logo_scraper do
 				Logo.create(src: entry.css(".wisfb_logoImage")[0]["src"],
 				name: entry.css("span")[0].text)
 			end
-			render text: entries
+			
   end
 
 end
