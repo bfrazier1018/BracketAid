@@ -9,7 +9,7 @@ $(document).on("ready", function() {
 	$(".js-game-name-team1").hide();
 	$(".js-game-name-team2").hide();
 
-// ---------------------- FOR HOME PAGE ----------------------------------
+// ----------------- FOR HOME PAGE ----------------------------------
 	$(".predicted-winner-header").empty();
 	$(".confidence-level-header").empty();
 	$(".team-stats-row").hide();
