@@ -22,8 +22,20 @@
 /* Background Image For All Pages */
 .body-container {
 	background-image: url("basketball-floor.jpg");
+	min-height: 100%;
 }
 
 .navbar {
 	margin-bottom: 0px;
+	background-color: #222;
+}
+
+footer {
+	height: 100px;
+	background-color: #222;
+	width: 100%;
+}
+
+.navbar .navbar-nav > li > a {
+ font-size: 16px;
 }

@@ -1,12 +1,13 @@
-<div class="container sign-up-page">
-<h2>Sign up</h2>
+<div class="container sign-up-container">
+
+<h1>Sign up</h1>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true, class: "email-field" %>
   </div>
 
   <div class="field">
@@ -21,17 +22,9 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
-
-    <!-- <label for="favorite-team">Favorite Team:</label>
-    <select class="form-control" id="favorite-team" style="width: 200px">
-        <option>Northern Iowa</option>
-        <option>Yale</option>
-        <option>Oregon</option>
-        <option>Kansas</option>
-    </select> -->
 <br>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class: "btn btn-primary signup-btn" %>
   </div>
 <% end %>
 <br>
