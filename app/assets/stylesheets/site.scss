@@ -2,6 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.home-text {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	text-align: center;
+	color: #222;
+}
+
+.icon {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #222;
+}
+
+.fa-home {
+	text-align: center;
+}
+
 // For Header Row in Table
 .js-table-team1 {
 	border: 4px solid black;
@@ -36,7 +55,10 @@
 // For h1 tag
 .welcome-header {
 	text-align: center;
+	font-size: 50px;	
+	font-family: copperplate;
 }
+
 /* Logo Team 1 Display */
 .js-logo-team1 {
 	width: 125px;
@@ -116,10 +138,12 @@
 
 .form-group {
 	font-size: 18px;
+	margin-bottom: 45px;
 }
 
 .form-control {
 	background-color: #f8f8f8;
 	font-size: 14px;
 	border: 1px solid #cc0000;
+	font-weight: bold;
 }

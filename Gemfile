@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "font-awesome-rails"
 gem 'sprockets', '>= 3.0.0'
 gem 'sprockets-es6'
 # For Devise User Sign Up and Log In

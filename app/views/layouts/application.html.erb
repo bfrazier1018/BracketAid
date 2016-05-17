@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <img src="<%= asset_path('march-madness') %>" class="img-responsive main-image">
@@ -16,7 +17,7 @@
       </div>
       <ul class="nav navbar-nav">
         <li><a href="/comparison/5">First Round</a></li> 
-        <li><a href="/brackets">BracketAid Predictions</a></li> 
+        <li><a href="/brackets">Bracket</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
       
@@ -36,8 +37,8 @@
 
 </div>
   <footer>
-  <%= link_to "Home", "/" %>
-  <p>&copy 2015 All Rights Reserved</p>
+    <p class="footer-text">&copy 2016 BracketAid.co All Rights Reserved</p>
+    <p class="email-footer">bfrazier1018@gmail.com</p>
   </footer>
 
 </body>
