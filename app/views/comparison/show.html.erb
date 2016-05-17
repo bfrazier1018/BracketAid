@@ -8,16 +8,16 @@
 		<br>
 		<% if @game.id <= 35 && @game.id > 5 %>
 	
-			<%= link_to "< Previous Game", "/comparison/#{@subtract_id}" %>
-			<%= link_to "Next Game >", "/comparison/#{@add_id}" %>
+			<%= link_to "< Previous Game", "/comparison/#{@subtract_id}", class: "previous-page" %>
+			<%= link_to "Next Game >", "/comparison/#{@add_id}", class: "next-page" %>
 
 		<% elsif @game.id <= 5 %>
 
-			<%= link_to "Next Game >", "/comparison/#{@add_id}" %>
+			<%= link_to "Next Game >", "/comparison/#{@add_id}", class: "next-page" %>
 
 		<% else %>
-
-			<%= link_to "Finished", "/" %>
+			<%= link_to "< Previous Game", "/comparison/#{@subtract_id}", class: "previous-page" %>
+			<%= link_to "Finished", "/", class: "finished" %>
 		<% end %>
 		<br>
 		<p class="js-game-name-team1"><%= @game.team_1 %></p> 

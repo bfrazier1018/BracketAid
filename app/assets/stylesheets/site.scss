@@ -78,23 +78,27 @@
 	text-align: center;
 	font-size: 18px;
 	text-decoration: underline;
+	font-weight: bold;
  }
 /* Winner Team Name Display */
 .js-predicted-winner {
 	text-align: center;
-	font-size: 32px;
+	font-size: 46px;
 	font-weight: bold;
+	color: white;
 }
 /* For Confidence Level Header */
 .confidence-level-header {
 	text-align: center;
 	text-decoration: underline;
 	font-size: 14px;
+	font-weight: bold;
 }
 /* For Confidence Level Input */
 .js-confidence-level {
 	text-align: center;
-	font-size: 18px;
+	font-size: 22px;
+	color: black;
 }
 // For Image of Logos Row
 .all-logos-image-row {

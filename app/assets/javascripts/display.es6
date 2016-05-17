@@ -121,19 +121,14 @@ function displayScheduleTeam1(games) {
 	$(".schedule-modal-name-team1").text($(".js-table-name-team1").text());
 
 	games.forEach(function(game) {
-		if (game !== null) {
-
-				var html = `
-				<tr>
-					<td>${game.date}</td>
-					<td>${game.opponent}</td>
-					<td>${game.result} ${game.score}</td>
-				</tr>`;
-				$(".js-schedule-modal-team1").append(html);
-
-			} else {
-				console.log("No Schedule");
-			}
+		var html = `
+		<tr>
+			<td>${game.date}</td>
+			<td>${game.opponent}</td>
+			<td>${game.result} ${game.score}</td>
+		</tr>`;
+	
+		$(".js-schedule-modal-team1").append(html);
 	});
 
 };
